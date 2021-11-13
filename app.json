@@ -3,5 +3,13 @@
     "description": "A deploy of Chamilo on Heroku",
     "repository": "https://github.com/victor-valencia/chamilo-lms/tree/1.11.x",
     "logo": "https://chamilo.org/wp-content/uploads/2018/09/chamilo_logo.png",
-    "keywords": ["lms", "php", "mysql"]
+    "keywords": ["lms", "php", "mysql"],
+    "addons": [
+        {
+          "plan": "jawsdb",
+          "options": {
+            "version": "5.7"
+          }
+        }
+    ]
 }
