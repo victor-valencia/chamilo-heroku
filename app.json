@@ -13,26 +13,6 @@
         }
     ],
     "env": {
-        "DATABASE_HOST": {
-            "description": "The DATABASE_HOST environment variable.",
-            "value": "nwhazdrp7hdpd4a4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"
-        },
-        "DATABASE_PORT": {
-            "description": "The DATABASE_PORT environment variable.",
-            "value": "3306"
-        },
-        "DATABASE_USER": {
-            "description": "The DATABASE_USER environment variable.",
-            "value": "k5rfcg3vvkcf7t87"
-        },
-        "DATABASE_PASSWORD": {
-            "description": "The DATABASE_PASSWORD environment variable.",
-            "value": "zm5pn9louhmu5n07"
-        },
-        "DATABASE_MAIN": {
-            "description": "The DATABASE_MAIN environment variable.",
-            "value": "vnfjiu474osi48g0"
-        },
         "ROOT_WEB": {
             "description": "The ROOT_WEB environment variable.",
             "value": "https://ceir-chamilo.herokuapp.com"

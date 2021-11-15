@@ -219,11 +219,13 @@ $session_lifetime = 360000;
 $institutionUrlForm = 'http://www.chamilo.org';
 
 if (!isset($_GET['running'])) {
-    $dbHostForm = getenv('DATABASE_HOST');
-    $dbUsernameForm = getenv('DATABASE_USER');
-    $dbPassForm = getenv('DATABASE_PASSWORD');
-    $dbNameForm = getenv('DATABASE_MAIN');
-    $dbPortForm = getenv('DATABASE_PORT');
+
+    $jawsbd_url = parse_url(getenv("JAWSDB_URL"));
+    $dbHostForm = $jawsbd_url["host"];
+    $dbUsernameForm = $jawsbd_url["user"];
+    $dbPassForm = $jawsbd_url["pass"];
+    $dbNameForm = substr($jawsbd_url["path"],1);
+    $dbPortForm = $jawsbd_url["port"];
 
     // Extract the path to append to the url if Chamilo is not installed on the web root directory.
     $urlAppendPath = api_remove_trailing_slash(api_get_path(REL_PATH));
