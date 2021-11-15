@@ -146,7 +146,7 @@ doctrine:
         default_connection: default
         connections:
             default:
-                driver:   pdo_mysql
+                # url: '%database_url%'               
                 host:     "%database_host%"
                 port:     "%database_port%"
                 dbname:   "%database_name%"
