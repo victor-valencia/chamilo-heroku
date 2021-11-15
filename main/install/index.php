@@ -219,7 +219,7 @@ $session_lifetime = 360000;
 $institutionUrlForm = 'http://www.chamilo.org';
 
 if (!isset($_GET['running'])) {
-    $dbHostForm = 'localhost';
+    $dbHostForm = getenv('DATABASE_HOST');
     $dbUsernameForm = 'root';
     $dbPassForm = '';
     $dbNameForm = 'chamilo';
