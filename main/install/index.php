@@ -220,10 +220,10 @@ $institutionUrlForm = 'http://www.chamilo.org';
 
 if (!isset($_GET['running'])) {
     $dbHostForm = getenv('DATABASE_HOST');
-    $dbUsernameForm = 'root';
-    $dbPassForm = '';
-    $dbNameForm = 'chamilo';
-    $dbPortForm = 3306;
+    $dbUsernameForm = getenv('DATABASE_USER');
+    $dbPassForm = getenv('DATABASE_PASSWORD');
+    $dbNameForm = getenv('DATABASE_MAIN');
+    $dbPortForm = getenv('DATABASE_PORT');
 
     // Extract the path to append to the url if Chamilo is not installed on the web root directory.
     $urlAppendPath = api_remove_trailing_slash(api_get_path(REL_PATH));
