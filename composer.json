@@ -156,7 +156,17 @@
             "dev-master": "1.11.x-dev"
         },
         "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
+            "file": "app/config/parameters.yml",
+            "env-map": {
+                "database_url": "JAWSDB_URL",
+                "database_host": "DATABASE_HOST",
+                "database_name": "DATABASE_MAIN",
+                "database_port": "DATABASE_PORT",
+                "database_user": "DATABASE_USER",
+                "database_password": "DATABASE_PASSWORD",                
+                "root_web": "ROOT_WEB",
+                "root_sys": "ROOT_SYS"
+            }
         },
         "symfony-app-dir": "app",
         "symfony-assets-install": "relative",
