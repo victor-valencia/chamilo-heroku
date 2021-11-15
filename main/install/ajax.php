@@ -36,7 +36,7 @@ if (isAlreadyInstalledSystem()) {
 
 $action = isset($_POST['a']) ? $_POST['a'] : null;
 
-$dbHost = isset($_POST['db_host']) ? $_POST['db_host'] : 'localhost';
+$dbHost = isset($_POST['db_host']) ? $_POST['db_host'] : getenv('DATABASE_HOST');
 $dbUsername = isset($_POST['db_username']) ? $_POST['db_username'] : 'root';
 $dbPass = isset($_POST['db_pass']) ? $_POST['db_pass'] : '';
 $dbName = isset($_POST['db_name']) ? $_POST['db_name'] : 'chamilo';
